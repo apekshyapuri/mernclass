@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in html</title>
+    <style>
+        label {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <!-- first name, lastname, phone number, email -->
+        <input type="text"><!--  for text -->
+        <input type="number"> <!-- only number no text  -->
+        <input type="password"> <!-- for password  -->
+
+
+    </form>
+
+    <br>
+    <h1>form</h1>
+    <form>
+        <!-- Label ma vako (for) ko value ra input ma vako (id) ko value same hunu parxa -->
+        <label for="Firstname">Firstname:</label> <input type="text" id="Firstname" placeholder="Enter Firstname" required>
+
+        <label for="Lastname">Lastname:</label> <input type="text" id="Lastname" placeholder="Enter Lastname">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+        <label for="password">Password:</label> <input type="password" id="password" placeholder="Enter Password" required>
+        <br>
+
+        <!-- name different vayo vani multiple  select hunxa . name same vayo vani euta matra select garna milxa -->
+        <label for="male">Male</label><input type="radio" name="gender" id="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+
+        <label for="">1</label>
+        <input type="checkbox">
+        <label for="">2</label>
+        <input type="checkbox">
+        <label for="">3</label>
+        <input type="checkbox">
+        <label for="">4</label>
+        <input type="checkbox">
+        <label for="">5</label>
+        <input type="checkbox">
+        <br>
+
+        <!-- Description -->
+        <textarea name="" id="" placeholder="Enter you idea" rows="5" cols="30"></textarea>
+        <br>
+
+        <!--  dropdown Select -->
+        <label for="">Country</label>
+        <select name="" id="">
+            <option value="nepal">Nepal</option>
+            <option value="china">China</option>
+            <option value="bharat">Bharat</option>
+        </select>
+        <input type="date">
+        <input type="time">
+        <input type="range" value="100">
+
+
+        <br>
+        <input type="submit" value="submit">
+        <!-- value = ma j nam lekhyo output matei dekhinxa such as submit, yes, okay etc -->
+    </form>
+</body>
+
+</html>
