@@ -1,0 +1,21 @@
+    <style>
+h1{
+    color: blue;
+    background-color: aqua;
+}
+
+p{
+    color:brown ;
+    background-color: blueviolet;
+}
+.head{
+    color: red;
+}
+#css{
+    background-color:pink;
+}
+
+div{
+    background-color: green;
+}
+    </style>
