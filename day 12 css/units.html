@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: red;
+            color: white;
+
+            /* height and width change through pixel
+            disadvantage -> pixel are fix units . yedi hami le yo mobile ma open garem vane ni it will not change according to mobile jastako testai hunxa. */
+            width: 500px;
+         height: 600px; 
+        }
+
+        #happy{
+            /* height and width change through VW and VH
+            VW - viewport width
+            VH  - viewport height
+            ini haru le device anusar change garxa
+            max -100 
+            min -0*/
+
+
+    background-color: pink
+    ;
+    width: 80vw;
+    height: 50vh;
+    /* 16*2 = 32 
+      32px =2 rem
+      16 px = 1 rem
+      48 px= 3 rem*/
+  
+        font-size: 2rem;
+
+        }
+.percentage{
+    padding: 10px;
+    background-color: green;
+    height: 50vh;
+    font-size: 2rem;
+}
+        .sad{
+            /* height and width change through percentage */
+            background-color: brown;
+            width:50%;
+            height: 40%;
+        
+        }
+
+        /* 
+        rem->
+        em -> */
+
+        /* rem is always relative with the root element font size */
+
+        /* em -> is always relative to its container or element */
+        html{
+            font-size: 2rem;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        box
+    </div>
+
+    <div id="happy">
+        I am very Sadddddddddd
+    </div>
+    <div class="percentage">
+    <div class="sad">
+        I am very happy
+    </div>
+    </div>
+    
+</body>
+</html>
