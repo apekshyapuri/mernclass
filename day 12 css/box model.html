@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model in css</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: green;
+            height: 500px;
+            width: 500px;
+            color: white;
+            font-size: 4rem;
+                  /*  single value diyo vane sabai tira eutai value lagxa 
+                  2 ota value diyo vani x-axis ra y-axis ma xuttai vlaue lagxa
+                   */
+            /* margin: 50px 20px; */
+
+           /* 4 ota value diyo vani . think like clock 
+           1 st value le top 
+           2nd value le right
+           3rd value le bottom
+           4 th value le left */
+           
+            /* margin: 10px 5px 50px 2px ; */
+
+            margin: 50px;
+
+            padding: 70px;
+
+        }
+
+        .parent{
+            background-color: red;
+            height: 500px;
+            width: 500px;
+            padding: 50px;
+            margin: 30px;
+
+        }
+        .child{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            margin: 90px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">I am a Box</div>
+
+    <div class="parent"><div class="child">
+ I am a child class
+    </div>
+</div>
+    
+</body>
+</html>
