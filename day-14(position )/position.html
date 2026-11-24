@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in css</title> 
+    <style>
+        .container{
+            height: 100vh;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            position: relative;
+        }
+/*  */
+        .box{
+            height: 100px;
+            width: 80%;
+            background-color: aqua;
+            margin: 10px;
+
+        }
+/*  absolute can move freely jata pani not laki relative */
+        .box1{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+          
+            left: 0;
+            bottom: 0;
+        }
+        .box2{
+            background-color: green;
+            /* relative le afno thau xoddaina 
+            we can give negative and positive marking . negative marking le thayakai ulto garxa */
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+
+        .box3{
+            background-color: red;
+        }
+
+        .box4{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- position Types
+         1.relative
+         2.absolute
+         3.fixed
+         4.sticky
+          -->
+    
+
+     <div class="container">
+        <div class="box box1"></div>
+        <div  class="box box2"></div>
+        <div  class="box box3"></div>
+        <div  class="box box4"></div>
+    </div>
+</body>
+</html>

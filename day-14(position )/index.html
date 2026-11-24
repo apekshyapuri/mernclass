@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector</title>
+    <style>
+        /* class selector */
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            cursor: pointer;
+            
+        }
+
+        /* pseudo selector */
+
+        .box:hover{
+            /* height: 300px; */
+            scale: 1.5;
+            background-color: rgb(192, 80, 80);
+        }
+
+        .para :first-child{
+            background-color: red;
+
+        }
+       P:last-child{
+    background-color: aqua;
+}
+
+p:nth-child(2){
+    background-color: green;
+}
+p:nth-child(3){
+    background-color: gray;
+}
+ button:disabled{
+    background-color: pink;
+    color: blue; 
+}
+
+
+button{
+    background-color: red;
+}
+
+/* sibling sign -> ~ */
+input:checked~h1{
+    background-color: blueviolet;
+    color: brown;
+    display: inline;
+
+}
+.before::before{
+    content: "K CHA?? ";
+
+}
+
+.before::after{
+    content:  " THIK XA YARRRRRR.... TALAI K CHA???";
+  
+}
+
+.me:hover:after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    display: block;
+    background-color: blueviolet;
+    
+}
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div> <br><br>
+<div class="before">HIII</div>
+
+<div class="me">HELLO</div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugiat consectetur earum perspiciatis accusantium cum reprehenderit nostrum enim fuga ex.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ducimus.</p>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <button>Help me</button>
+    <button disabled>Hello</button>
+
+    <input type="checkbox">
+    <h1 class="p">Hello</h1>
+</body>
+</html>
