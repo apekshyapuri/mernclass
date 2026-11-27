@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            height: 400vh;
+            background-color: orange;
+        }
+        .nav{
+            height: 50px;
+            background-color: red;
+            position: fixed;
+            /* top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0; */
+
+
+            /* 4 side bata nai 0 lagxa */
+            inset: 0;
+
+            z-index: 1;
+        }
+        .whatsap-circle{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color: green;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+/* sticky le afno thau xoddaina 
+fixed le afno thau xodxa ani arko le tesko thau linxa */
+        .sticky{
+            height: 50px;
+            margin-top: 100px;
+            background-color: black;
+            color: white;
+          position: sticky;
+          top: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- <div class="nav"></div> -->
+        <div class="whatsap-circle"></div>
+        <div class="sticky">
+            you are very sticky
+        </div>
+    </div>
+    
+</body>
+</html>

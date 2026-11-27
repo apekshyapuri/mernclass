@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 100vh;
+            padding: 10px;
+
+
+            /* vertical ma flex thyakai ulto kam garxa */
+
+            /* content lai horizentally move garxa */
+            display: flex;
+
+            /* content ko bich ma gap dina help garxa */
+            gap: 10px;
+
+            /* content lai start end ya bich ma move garna help garxa */
+            /* justify-content: start; */
+  
+             /* content lai vertical move garauxa 
+            align-items: center;
+
+            /* yesle naateko kura lai arko line ma liyera jana help garxa */
+            /* flex-wrap: wrap; */
+/*  gap ghatxa alig content le */
+            /* align-content: start ; */
+
+            /* yesle content lai vertically rakxa .... by default horizental hunthiyo */
+            /* flex-direction: column; */
+
+            justify-content:space-evenly;
+        }
+
+        .box{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            color: white;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+         <!-- <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+         <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div> -->
+    </div>
+</body>
+</html>
